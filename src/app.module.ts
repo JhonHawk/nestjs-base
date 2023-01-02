@@ -4,6 +4,7 @@ import { AppService } from './app.service';
 import { ConfigModule } from '@nestjs/config';
 import config from './config/config';
 import { validationConfigSchema } from './config/validations';
+import { SignUpModule } from './modules/sign-up/sign-up.module';
 
 @Module({
   imports: [
@@ -14,6 +15,7 @@ import { validationConfigSchema } from './config/validations';
       cache: true,
       validationSchema: validationConfigSchema,
     }),
+    SignUpModule,
   ],
   controllers: [AppController],
   providers: [AppService],
