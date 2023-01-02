@@ -12,4 +12,22 @@ export class SignUpDto {
   @MinLength(6)
   @MaxLength(20)
   password: string;
+
+  @ApiProperty()
+  @IsString()
+  @MinLength(6)
+  @MaxLength(20)
+  firstName: string;
+
+  @ApiProperty()
+  @IsString()
+  @MinLength(6)
+  @MaxLength(20)
+  lastName: string;
+
+  @ApiProperty()
+  @IsString()
+  @MinLength(8)
+  @MaxLength(12)
+  phoneNumber: string;
 }

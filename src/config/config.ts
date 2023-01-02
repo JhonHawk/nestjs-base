@@ -3,6 +3,7 @@ import * as process from 'process';
 
 export default registerAs('app', () => {
   return {
+    port: process.env.PORT,
     database: {
       name: process.env.DATABASE_NAME,
       host: process.env.DATABASE_HOST,
