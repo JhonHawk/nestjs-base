@@ -11,6 +11,9 @@ export default registerAs('app', () => {
       username: process.env.DATABASE_USERNAME,
       password: process.env.DATABASE_PASSWORD,
     },
+    mongo: {
+      connection: process.env.MONGO_CONNECTION
+    },
     apiKey: process.env.API_KEY,
   };
 });
